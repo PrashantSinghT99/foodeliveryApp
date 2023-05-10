@@ -11,7 +11,7 @@ const RestaurantMenu = () => {
   // console.log(restaurantMenuData);
 
   const menuData=restaurantMenuData;
-  console.log("restaurant menu",menuData);
+  // console.log("restaurant menu",menuData);
 
   useEffect(() => {
     callRestaurantMenuApi();
@@ -53,7 +53,9 @@ const RestaurantMenu = () => {
   ) : (
     <div className="container">
       <RestaurantInfo {...menuData.info} />
+      <div className="w-screen mb-10" >
       <MenuitemList menulist={menuData.menu} />
+      </div>
     </div>
   );
   // return (

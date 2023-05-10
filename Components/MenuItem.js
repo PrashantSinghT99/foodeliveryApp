@@ -5,7 +5,7 @@ import MenuItemCard from './MenuItemCard'
 
 const MenuItem = ({ m }) => {
   const { itemCards } = m;
-  console.log("menu item",itemCards);
+  // console.log("menu item",itemCards);
 
   return (
     <div>
