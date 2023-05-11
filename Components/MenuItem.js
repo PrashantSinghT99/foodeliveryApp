@@ -1,16 +1,16 @@
 import React from "react";
 import { SWIGGY_IMG_URL } from "../utils/constants";
 
-import MenuItemCard from './MenuItemCard'
+import MenuItemCards from './MenuItemCards'
 
 const MenuItem = ({ m }) => {
   const { itemCards } = m;
-  // console.log("menu item",itemCards);
+  // console.log("menu itemcards",itemCards);
 
   return (
     <div>
       {itemCards?.map((card, index) => (
-        <MenuItemCard key={index} card={card} />
+        <MenuItemCards key={index} card={card} />
       ))}
     </div>
   );

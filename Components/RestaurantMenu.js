@@ -4,14 +4,15 @@ import RestaurantInfo from "./RestaurantInfo";
 import { RESTAURANT_MENU_URL } from "../utils/constants";
 import MenuitemList from "./MenuitemList";
 import Shimmer from "./Shimmer";
-const RestaurantMenu = () => {
-  const { id } = useParams();
-  // console.log(id);
-  const [restaurantMenuData, setrestaurantMenuData] = useState(null);
-  // console.log(restaurantMenuData);
 
-  const menuData=restaurantMenuData;
-  // console.log("restaurant menu",menuData);
+
+
+const RestaurantMenu = () => {
+ 
+  const { id } = useParams();
+
+  const [restaurantMenuData, setrestaurantMenuData] = useState(null);
+  const menuData = restaurantMenuData;
 
   useEffect(() => {
     callRestaurantMenuApi();
@@ -51,20 +52,13 @@ const RestaurantMenu = () => {
   return !menuData ? (
     <Shimmer />
   ) : (
-    <div className="container">
+    <div className="container mt-2">
       <RestaurantInfo {...menuData.info} />
       <div className="w-screen mb-10" >
-      <MenuitemList menulist={menuData.menu} />
+        <MenuitemList menulist={menuData.menu} />
       </div>
     </div>
   );
-  // return (
-  //   <></>
-    // <div className="container">
-    //   <RestaurantInfo {...menuData.info} />
-    //   <Menuitems menu={menuData.menu} />
-    // </div>
-  // );
 };
 
 export default RestaurantMenu;

@@ -18,7 +18,7 @@ const Body = () => {
     setRestroData(json?.data?.cards[2]?.data?.data?.cards);
   };
   return (
-    <div className="text-center mt-2">
+    <div className="text-center mt-8 h-[80%] w-[100%]">
       <input type="text" placeholder="Search" className=" h-8 mt-2 w-[400px]  p-4 border border-gray-300 rounded-md focus:outline-none placeholder:" />
       <button className="h-8 w-20 ml-4 bg-gray-600 text-white rounded-lg">Search</button>
       <div className="flex flex-wrap justify-center border-none mb-6">
