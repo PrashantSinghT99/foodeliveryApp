@@ -40,7 +40,7 @@ const MenuCard = (card) => {
                 </div>
 
                 <div>
-                    <button className="bg-green-700 h-10 p-2 px-3 mx-10 text-white rounded-md" onClick={addItemToCart}>
+                    <button className="bg-green-700 h-10 p-2 px-3 mx-10 text-white rounded-md hover:bg-green-400" onClick={addItemToCart}>
                         Add
                     </button>
                 </div>

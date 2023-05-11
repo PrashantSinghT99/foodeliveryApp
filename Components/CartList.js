@@ -8,8 +8,11 @@ const CartList = () => {
   const cartItems = useSelector((store) => store.cart.cartItems);
   const dispatch = useDispatch();
   // console.log(cartItems[0]);
-  const clearCart=()=>dispatch(clearCartItemsSlice());
-  
+  const clearCart=()=>
+{
+  console.log("cart cleared");
+  dispatch(clearCartItemsSlice());
+}
   // console.log(Items);
 
   return (
@@ -19,7 +22,7 @@ const CartList = () => {
           <h1 className="font-bold text-4xl ml-4 mr-4">{`Cart(${cartItems.length})`}</h1>
         </div>
         <div>
-          <button className="h-16 w-32 text-xl bg-green-600 text-white rounded-xl" onClick={clearCart}>
+          <button className="h-14 w-32 text-xl bg-green-700 hover:bg-green-400 text-white rounded-xl" onClick={clearCart}>
             Clear Chart
           </button>
         </div>

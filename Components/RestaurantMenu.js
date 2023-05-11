@@ -4,15 +4,10 @@ import RestaurantInfo from "./RestaurantInfo";
 import { RESTAURANT_MENU_URL } from "../utils/constants";
 import MenuitemList from "./MenuitemList";
 import Shimmer from "./Shimmer";
-
-
-
 const RestaurantMenu = () => {
- 
-  const { id } = useParams();
-
-  const [restaurantMenuData, setrestaurantMenuData] = useState(null);
-  const menuData = restaurantMenuData;
+const { id } = useParams();
+const [restaurantMenuData, setrestaurantMenuData] = useState(null);
+const menuData = restaurantMenuData;
 
   useEffect(() => {
     callRestaurantMenuApi();
