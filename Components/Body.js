@@ -34,11 +34,11 @@ const Body = () => {
     <div className="text-center mt-6 h-[80%] w-[100%]">
       <input type="text"
         placeholder="Search restaurant"
-        className=" h-8 mt-2 w-[400px] p-4 border border-gray-300 rounded-md focus:outline-none placeholder:"
+        className=" h-8 mt-2 w-[400px] p-4 border border-gray-300 rounded-md focus:outline-none xsm:w-[180px] mob:w-[180px]"
         value={SearchData}
         onChange={(e) => setSearchData(e.target.value)}
       />
-      <button className="h-8 w-20 ml-4 bg-gray-600 text-white rounded-lg hover:bg-green-500"
+      <button className="h-8 w-20 ml-4 bg-gray-600 text-white rounded-lg hover:bg-green-500  xsm:h-6,w-15 mob:h-6,w-15"
         onClick={() => {
           const data = filterData(SearchData, RestroData);
           setFilteredRestaurants(data);
