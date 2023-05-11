@@ -47,7 +47,7 @@ const menuData = restaurantMenuData;
   return !menuData ? (
     <Shimmer />
   ) : (
-    <div className="mt-2">
+    <div className="container mt-2">
       <RestaurantInfo {...menuData.info} />
       <div className="w-screen mb-10" >
         <MenuitemList menulist={menuData.menu} />
