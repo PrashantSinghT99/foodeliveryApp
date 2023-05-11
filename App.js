@@ -8,15 +8,14 @@ import Error from "./Components/Error";
 import store from "./Store/store";
 import { Provider } from "react-redux";
 import CartList from "./Components/CartList";
+import Instamart from "./Components/Instamart";
 
 
 const AppLayout = () => (
   <>
-  <div className="font-metrophobic">
     <Header />
     <Outlet />
     <Footer />
-    </div>
   </>
 );
 const router = createBrowserRouter([
@@ -36,6 +35,11 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <CartList />,
+        errorElement: <Error />,
+      },
+      {
+        path: "/instamart",
+        element: <Instamart />,
         errorElement: <Error />,
       },
     ]

@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "This is food delivery app made frmom scratch",
   "main": "App.js",
+  "source": "index.html",
   "scripts": {
     "test": "jest",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build":"parcel build"
   },
   "repository": {
     "type": "git",

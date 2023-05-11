@@ -19,16 +19,16 @@ const CartList = () => {
     <div className="w-[100%] mt-8 ml-4 flex flex-col">
       <div className="flex items-center">
         <div>
-          <h1 className="font-bold text-4xl ml-4 mr-4">{`Cart(${cartItems.length})`}</h1>
+          <h1 className="font-bold text-4xl mob:text-sm xsm:text-sm ml-4 mr-4">{`Cart(${cartItems.length})`}</h1>
         </div>
         <div>
-          <button className="h-14 w-32 text-xl bg-green-700 hover:bg-green-400 text-white rounded-xl" onClick={clearCart}>
+          <button className="h-14 w-32 text-xl mob:text-sm mob:w-20 mob:h-10 xsm:text-sm xsm:w-20 bg-green-700 hover:bg-green-400 text-white rounded-xl" onClick={clearCart}>
             Clear Chart
           </button>
         </div>
       </div>
 
-      <div className="flex mt-6 text-xl items-center flex-wrap mb-10">
+      <div className="flex mt-6 text-xl mob:text-sm xsm:text-sm items-center flex-wrap mb-10">
         {cartItems.map((card) => (
           <Cart key={card.itemId} card={card}></Cart>
         ))}
