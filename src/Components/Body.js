@@ -43,7 +43,7 @@ const Body = () => {
           const data = filterData(SearchData, RestroData);
           setFilteredRestaurants(data);
         }}>Search</button>
-      <div className="flex flex-wrap justify-center border-none mb-6">
+      <div className="flex flex-wrap justify-center gap-8 border-none mb-6">
         <RestaurantList data={filteredRestaurants} />
       </div>
     </div>
