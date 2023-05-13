@@ -43,8 +43,6 @@ Header.js: Displays the header section of the application.
 
 Instamart.js: Provides a responsive interface for browsing and ordering food.
 
-MenuCard.js: Displays a card representing a food item in the menu with cart and search features.
-
 MenuItem.js: Represents an individual food item with the ability to add it to the cart.
 
 MenuItemCards.js: Renders multiple menu item cards.
