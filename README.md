@@ -1,8 +1,29 @@
 # foodeliveryApp
 Hosted at: https://foodelivery-pst99.netlify.app/
 
-A web application built with Reactjs swiggy clone and integrated swiggy data api.
-The Food Ordering App is a web application built using React.js and utilizes additional libraries and tools like React router,React Redux, Parcel bundler, Tailwind CSS, PostCSS, and Custom Hooks. The app allows users to browse and order food from various restaurants. It incorporates responsive design principles to ensure a seamless experience across different devices.
+Foodelivery
+It is an exceptional food-ordering application developed using React Js and integrated with Swiggy's live API. This project boasts high scalability and optimal performance.
+
+Key Features:
+1.	Seamless integration with Swiggy's Public API.
+2.	Engaging landing page with a comprehensive list of restaurants.
+3.	Centralized Redux Store for efficient state management.
+4.	Enhanced user experience with Shimmer UI.
+5.	Responsively designed for optimal display on various devices.
+6.	Robust search functionality to find desired restaurants.
+7.	Restaurant menu pages with a user-friendly interface.
+8.	Convenient addition and removal of food items from the cart.
+9.	Effective routing for smooth navigation.
+10.	And numerous other remarkable features.
+Tech Stack:
+•	React Functional Base Components for efficient development.
+•	Redux Toolkit for seamless state management.
+•	Parcel as a bundler to optimize the application.
+•	React-Router-Dom for efficient routing.
+•	Custom Hooks for reusable code.
+•	Lazy Loading for improved performance.
+•	Code Splitting for better resource allocation.
+
 
 Components Structure:
 
