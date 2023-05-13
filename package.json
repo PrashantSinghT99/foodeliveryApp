@@ -2,12 +2,11 @@
   "name": "y",
   "version": "1.0.0",
   "description": "This is food delivery app made frmom scratch",
-  "main": "App.js",
   "source": "index.html",
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
-    "build":"parcel build"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -21,13 +20,15 @@
   "homepage": "https://github.com/PrashantSinghT99/foodelivery#readme",
   "devDependencies": {
     "@babel/core": "^7.21.8",
-    "parcel": "^2.8.3",
-    "postcss": "^8.4.23",
+    "parcel": "^2.0.0-nightly.1296",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.2.1",
     "process": "^0.11.10",
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "autoprefixer": "^9.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",

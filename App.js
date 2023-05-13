@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "./Components/Header";
-import Body from "./Components/Body";
-import Footer from "./Components/Footer";
+import Header from './src/Components/Header';
+import Body from './src/Components/Body'
+import Footer from './src/Components/Footer';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import RestaurantMenu from "./Components/RestaurantMenu";
-import Error from "./Components/Error";
+import RestaurantMenu from './src/Components/RestaurantMenu';
+import Error from './src/Components/Error';
 import store from "./Store/store";
 import { Provider } from "react-redux";
-import CartList from "./Components/CartList";
-import Instamart from "./Components/Instamart";
+import CartList from './src/Components/CartList';
+import Instamart from './src/Components/Instamart';
 
 
 const AppLayout = () => (

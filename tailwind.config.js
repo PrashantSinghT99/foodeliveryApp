@@ -3,8 +3,10 @@ module.exports = {
     // './pages/**/*.{html,js}',
     './Components/**/*.{html,js}',
     ".{html,js,ts,jsx,tsx}",
+    "./src/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
+   
     screens: {
       'mob' : { 'min' : '360px' , 'max': '479px' },
       'xsm' : { 'min' : '480px' , 'max': '639px' },
@@ -14,6 +16,9 @@ module.exports = {
       'xl'  : {'min': '1280px', 'max': '1535px'},
       '2xl' : {'min': '1536px'},
     },
+    // colors: {
+    //   orange: '#FD8F31',
+    // },
     extend: { fontFamily: {
        metrophobic: ['Metrophobic', 'sans-serif']
     }, 
