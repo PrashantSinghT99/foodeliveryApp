@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 
 const RestaurantCard = ({ info }) => {
   // console.log(info.data.cloudinaryImageId);
-
+const rating=info.data.avgRating;
 
   const ratingColor = () => {
-    if (info.data.avgRating != "--" && info.data.avgRating < 4) {
-      return (style = " px-1 text-white h-6 w-12 bg-[#db7c38]");
-    } else if (info.data.avgRating != "--" && info.data.avgRating >=4) {
-      return (style = " px-1 text-white h-6 w-12 bg-[#48c479]");
+
+    if ( rating!= "--" && rating < 4) {
+      return "px-1 text-white h-6 w-12 bg-[#db7c38]";
+    } else if (rating != "--" && rating >= 4) {
+      return " px-1 text-white h-6 w-12 bg-[#48c479]";
     }
   };
 

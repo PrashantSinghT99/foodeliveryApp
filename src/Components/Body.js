@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import RestaurantList from "./RestaurantList";
 import { RESTAURANT_API_URL } from "../utils/constants";
-import { filterData } from '../utils/useSearch'
+import filterData from '../utils/useSearch'
 import Shimmer from '../Components/Shimmer'
 const Body = () => {
   const [RestroData, setRestroData] = useState([]);
   const [SearchData, setSearchData] = useState("");
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
-
   useEffect(() => {
+
     restaurantApiCall();
   }, []);
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { SWIGGY_IMG_URL } from "../utils/constants";
-
 import MenuItemCards from './MenuItemCards'
 
 const MenuItem = ({ m }) => {

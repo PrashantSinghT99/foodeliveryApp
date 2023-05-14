@@ -5,7 +5,7 @@ export const SWIGGY_IMG_URL = "https://res.cloudinary.com/swiggy/image/upload/fl
 
 //export const RESTAURANT_MENU_URL="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.3373418&lng=77.9104055&restaurantId="
 
-export const RESTAURANT_MENU_URL="https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.3373418&lng=77.9104055&restaurantId="
+export const RESTAURANT_MENU_URL="https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.3373418&lng=77.9104055&restaurantId="
 
 
 export const NO_IMG_URL="https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg"
