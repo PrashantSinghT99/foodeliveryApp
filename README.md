@@ -29,8 +29,6 @@ Components Structure:
 
 Body.js: This component serves as the main body of the application and contains the core functionality and features.
 
-Other Components:
-
 Cart.js: Manages the user's shopping cart and displays the selected items for checkout.
 
 CartList.js: Renders the list of items in the cart.
