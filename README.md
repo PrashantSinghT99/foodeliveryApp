@@ -1,5 +1,5 @@
 # foodeliveryApp
-Hosted at: https://foodelivery-pst99.netlify.app/
+Hosted at: https://foodelivery-02pst99.netlify.app/
 
 Foodelivery
 It is an exceptional food-ordering application developed using React Js and integrated with Swiggy's live API. This project boasts high scalability and optimal performance.
@@ -28,8 +28,6 @@ Tech Stack:
 Components Structure:
 
 Body.js: This component serves as the main body of the application and contains the core functionality and features.
-
-Other Components:
 
 Cart.js: Manages the user's shopping cart and displays the selected items for checkout.
 
