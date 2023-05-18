@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <span className="flex items-center justify-center h-10 text-white font-bold fixed bottom-0 left-0 right-0 text-lg bg-[#db7c38]">
-        Developed by @Prashant Singh
+        Made with ❤️ by Prashant Singh
       </span>
     </div>
   );

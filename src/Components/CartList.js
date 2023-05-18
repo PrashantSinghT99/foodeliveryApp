@@ -37,7 +37,7 @@ const CartList = () => {
           <h1 className="font-bold text-xl mob:text-sm xsm:text-sm ml-4 mr-4">TotalCost:₹{getItemTotal()}</h1>
         </div>
         <div>
-          <button className="h-14 w-32 text-xl mob:text-sm mob:w-20 mob:h-10 xsm:text-sm xsm:w-20 bg-green-700 hover:bg-green-400 text-white rounded-xl" onClick={clearCart}>
+          <button className="h-14 w-32 text-xl mob:text-sm mob:w-20 mob:h-10 xsm:text-sm xsm:w-20 bg-red-700 hover:bg-red-400 text-white rounded-xl" onClick={clearCart}>
             Clear Chart
           </button>
         </div>

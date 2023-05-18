@@ -66,7 +66,7 @@ const [itemCount,setitemCount]=useState(0);
         <h1 className="mt-2">₹{infoData?.price / 100}</h1>
       </div>
 
-      <div>
+      <div className="ml-10">
         {/* <button
           className="bg-green-700 h-10 p-2 px-3 mx-10 text-white rounded-md hover:bg-green-400"
           onClick={addItemToCart}
