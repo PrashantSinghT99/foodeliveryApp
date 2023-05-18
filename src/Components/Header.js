@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 const Header = () => {
 
   const cartItems = useSelector((store) => store.cart.cartItems);
+  const totalItemsCount = useSelector((store) => store.cart.totalItemsCount);
 
   return (
     <div className="flex w-[100%] items-center justify-between mob:justify-start shadow-lg h-14 left-0 top-0">
@@ -43,7 +44,7 @@ const Header = () => {
             />
           </div>
           <div className="mr-4">
-            <span className="text-2xl text-red-600 xsm:text-lg mob:text-sm font-bold">{`(${cartItems.length})`}</span>
+            <span className="text-2xl text-red-600 xsm:text-lg mob:text-sm font-bold">{`(${totalItemsCount})`}</span>
           </div>
         </div>
       </Link>
