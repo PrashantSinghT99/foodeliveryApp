@@ -1,7 +1,9 @@
 # foodeliveryApp
 Hosted 1.0 version at: https://foodelivery-02pst99.netlify.app/ 
 
-Version 1.1 coming soon........
+Hosted 1.1 version at: https://foodelivery-pst99-03.netlify.app/
+
+Version 1.2 Coming soon.....................
 
 **Foodelivery**
 It is an exceptional food-ordering application developed using React Js and integrated with Swiggy's live API. This project boasts high scalability and optimal performance.
