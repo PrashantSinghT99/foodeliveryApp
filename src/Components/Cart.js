@@ -15,7 +15,7 @@ const Cart = ({ card }) => {
   // console.log(card);
 
   return (
-    <div className="flex flex-col h-[300px] w-52 my-5 font-bold shadow-md justify-center">
+    <div className="flex flex-col h-[325px] w-52 my-5 font-bold shadow-md justify-center">
       <div className="flex flex-col">
         <div>
           <h1 className="mb-4">{card.name.substring(0, 20)}</h1>

@@ -9,9 +9,9 @@ const cartSlice = createSlice({
   reducers: {
     cartItemsSlice: (state, action) => {
       // state.cartItems.push(actions.payload)
-      const item = state.cartItems[action.payload.id];
-      const quantity = item && item.hasOwnProperty("quantity") ? state.cartItems[action.payload.id]?.quantity + 1 : 1;
-      state.cartItems[action.payload.id] = { ...action.payload, quantity };
+      const item = state.cartItems[action?.payload?.id];
+      const quantity = item && item.hasOwnProperty("quantity") ? state?.cartItems[action?.payload?.id]?.quantity + 1 : 1;
+      state.cartItems[action?.payload?.id] = { ...action.payload, quantity };
       state.totalItemsCount = state.totalItemsCount + 1;
     },
     clearCartItemsSlice: (state) => {

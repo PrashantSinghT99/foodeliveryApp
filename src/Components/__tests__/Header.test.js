@@ -8,7 +8,7 @@ test("Logo should load on rendering Header", () =>{
   const header = render(
     <StaticRouter>
       <Provider store={store}>
-        <Header />
+        <Header/>
       </Provider>
     </StaticRouter>
   )
@@ -43,7 +43,7 @@ test("0 items in the cart on initial render", () => {
     )
   //   console.log(header);
   const cartCount=header.getByTestId("cart-count")
-  console.log(cartCount);
+  // console.log(cartCount);
 expect(cartCount.innerHTML).toBe("(0)");
 });
   

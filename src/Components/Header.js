@@ -27,11 +27,11 @@ const Header = () => {
       <div>
         <ul className="flex text-xl sm:text-lg xsm:text-xs mob:text-xs">
           <Link to='/'>
-          <li className="px-4 xsm:px-2 mob:px-1 cursor-pointer">Home</li>
+          <li className="px-4 xsm:px-2 mob:px-1 cursor-pointer hover:bg-[#db7c38] hover:text-white">Home</li>
           </Link>
-          <li className="px-4 xsm:px-2 mob:px-1 cursor-pointer">Contact</li>
+          <li className="px-4 xsm:px-2 mob:px-1 cursor-pointer  hover:bg-[#db7c38] hover:text-white">Contact</li>
           <Link to='/instamart'>
-          <li className="px-4 xsm:px-2 mob:px-1 cursor-pointer">Instamart</li>
+          <li className="px-4 xsm:px-2 mob:px-1 cursor-pointer  hover:bg-[#db7c38] hover:text-white">Instamart</li>
           </Link>
         </ul>
       </div>
@@ -45,8 +45,8 @@ const Header = () => {
               alt="cart"
             />
           </div>
-          <div className="mr-4">
-            <span data-testid="cart-count" className="text-2xl text-red-600 xsm:text-lg mob:text-sm font-bold">{`(${totalItemsCount})`}</span>
+          <div className="mr-4" >
+            <span  data-testid="cart-count" className="text-2xl text-red-600 xsm:text-lg mob:text-sm font-bold">{`(${totalItemsCount})`}</span>
           </div>
         </div>
       </Link>

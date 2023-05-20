@@ -9,7 +9,7 @@ const CartList = () => {
   const cartItems = useSelector((store) => store.cart.cartItems);
   const totalItemsCount = useSelector((store) => store.cart.totalItemsCount);
 
-  console.log(totalItemsCount);
+  // console.log(totalItemsCount);
   const dispatch = useDispatch();
 
   // console.log(cartItems[0]);

@@ -10,9 +10,9 @@ import { removeItem } from "../../Store/cartSlice";
 // import { useSelector } from "react-redux";
 
 const MenuItemCards = ({ card }) => {
-  const infoData = card.card.info;
+  const infoData = card?.card?.info;
 const [itemCount,setitemCount]=useState(0);
-  const { id } = infoData;
+  const id = infoData?.id;
 
   // console.log(infoData);
 
@@ -52,11 +52,11 @@ const [itemCount,setitemCount]=useState(0);
   };
 
   return (
-    <div className="flex justify-center m2 p-4 items-center shadow-md w-full">
+    <div className="flex justify-center m2 p-4 items-center shadow-md w-full" data-testid="menu">
       <div>
         <img
           src={
-            !infoData.imageId ? NO_IMG_URL : SWIGGY_IMG_URL + infoData.imageId
+            !infoData?.imageId ? NO_IMG_URL : SWIGGY_IMG_URL + infoData?.imageId
           }
           className="w-56 "
         />
@@ -74,14 +74,14 @@ const [itemCount,setitemCount]=useState(0);
           Add
         </button> */}
      
-        <button
+        <button data-testid="addMenuItemBtn"
           className="bg-green-700 h-10 p-2 px-3 mx-10 text-white rounded-md hover:bg-green-400"
           onClick={() => addItemToCart(infoData)}
         >
           +
         </button>
            <span>{itemCount}</span>
-        <button
+        <button data-testid="removeMenuItemBtn"
           className="bg-red-700 h-10 p-2 px-3 mx-10 text-white rounded-md hover:bg-red-400"
           onClick={() => handleDecrease(id)}
         >
