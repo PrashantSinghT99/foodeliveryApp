@@ -64,3 +64,9 @@ The project leverages React Redux for state management, Parcel as the bundler, a
 Custom Hooks are utilized to encapsulate and reuse logic throughout the application.
 
 Overall, this Food Ordering App aims to provide users with a seamless and responsive experience while browsing and ordering food from various restaurants.
+
+
+Unit TestCases:
+
+Path:foodeliveryApp/src/Components/__tests__/
+
