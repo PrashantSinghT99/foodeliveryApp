@@ -33,7 +33,7 @@ expect(cartlogo.src).toBe("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2w
 
 });
 
-test("0 items in the cart", () => {
+test("0 items in the cart on initial render", () => {
     const header = render(
       <StaticRouter>
         <Provider store={store}>
