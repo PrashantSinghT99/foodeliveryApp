@@ -12,6 +12,7 @@ dist
 /coverage
 /.parcel-cache
 .json
+test.txt
 # production
 /build
 
