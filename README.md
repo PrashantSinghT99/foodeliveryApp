@@ -3,10 +3,10 @@ Hosted 1.0 version at: https://foodelivery-02pst99.netlify.app/
 
 Version 1.1 coming soon........
 
-Foodelivery
+**Foodelivery**
 It is an exceptional food-ordering application developed using React Js and integrated with Swiggy's live API. This project boasts high scalability and optimal performance.
 
-Key Features:
+**Key Features:**
 1.	Seamless integration with Swiggy's Public API.
 2.	Engaging landing page with a comprehensive list of restaurants.
 3.	Centralized Redux Store for efficient state management.
@@ -17,7 +17,8 @@ Key Features:
 8.	Convenient addition and removal of food items from the cart.
 9.	Effective routing for smooth navigation.
 10.	And numerous other remarkable features.
-Tech Stack:
+
+**Tech Stack:**
 •	React Functional Base Components for efficient development.
 •	Redux Toolkit for seamless state management.
 •	Parcel as a bundler to optimize the application.
@@ -27,7 +28,7 @@ Tech Stack:
 •	Code Splitting for better resource allocation.
 
 
-Components Structure:
+**Components Structure:**
 
 Body.js: This component serves as the main body of the application and contains the core functionality and features.
 
