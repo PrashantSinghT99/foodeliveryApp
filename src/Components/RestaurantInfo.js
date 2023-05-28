@@ -9,7 +9,7 @@ const RestaurantInfo = ( menuData ) => {
   // console.log(name,areaName,city,avgRatingString,costForTwoMessage);
 
   return ( 
-  <div className="flex h-80 w-screen bg-blue-900 justify-center text-center">
+  <div className="flex h-80 w-screen bg-blue-950 justify-center text-center">
     <div>
       <img src={`${SWIGGY_IMG_URL}${cloudinaryImageId}`} className="h-60 w-80 mt-9" alt="restaurantInfo"/>
     </div>

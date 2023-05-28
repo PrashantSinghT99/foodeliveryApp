@@ -33,6 +33,9 @@ const Header = () => {
           <Link to='/instamart'>
           <li className="px-4 xsm:px-2 mob:px-1 cursor-pointer  hover:bg-[#db7c38] hover:text-white">Instamart</li>
           </Link>
+          <Link to='/FAQs'>
+          <li className="px-4 xsm:px-2 mob:px-1 cursor-pointer  hover:bg-[#db7c38] hover:text-white">FAQs</li>
+          </Link>
         </ul>
       </div>
       <Link to="/cart">

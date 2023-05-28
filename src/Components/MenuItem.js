@@ -6,6 +6,7 @@ const MenuItem = ({ m }) => {
   const { itemCards } = m;
   // console.log("menu itemcards",itemCards);
   // const cartItems = useSelector((store) => store.cart.cartItems);
+
   return (
     <div>
       {itemCards?.map((card, index) => (

@@ -14,7 +14,7 @@ const MenuItemCards = ({ card }) => {
 const [itemCount,setitemCount]=useState(0);
   const id = infoData?.id;
 
-  // console.log(infoData);
+  // console.log(infoData.itemAttribute.vegClassifier); veg/non veg
 
   // const cartItems = useSelector((store) => store.cart.cartItems);
 

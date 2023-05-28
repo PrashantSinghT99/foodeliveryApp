@@ -17,7 +17,7 @@ const useRestaurantMenu = (id) => {
             const menuItemsList = res_data?.data?.cards[2]["groupedCard"]?.cardGroupMap?.REGULAR?.cards;
             const itemCategory = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
             const NestedItemCategory = "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory";
-
+                //console.log(menuItemsList)
             const menu = menuItemsList.map((item) => {
                 if (
                     item.card.card["@type"] === itemCategory ||
