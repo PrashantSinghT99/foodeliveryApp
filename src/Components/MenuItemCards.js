@@ -11,10 +11,11 @@ import { removeItem } from "../../Store/cartSlice";
 
 const MenuItemCards = ({ card }) => {
   const infoData = card?.card?.info;
-const [itemCount,setitemCount]=useState(0);
+  const [itemCount, setitemCount] = useState(0);
   const id = infoData?.id;
 
-  // console.log(infoData.itemAttribute.vegClassifier); veg/non veg
+  console.log(infoData.itemAttribute.vegClassifier);
+  //veg/non veg
 
   // const cartItems = useSelector((store) => store.cart.cartItems);
 
@@ -33,8 +34,8 @@ const [itemCount,setitemCount]=useState(0);
     //     count: 1,
     //   })
     // );
-    dispatch(cartItemsSlice(infoData))
-    setitemCount(itemCount+1);
+    dispatch(cartItemsSlice(infoData));
+    setitemCount(itemCount + 1);
   };
 
   // const handleIncrease = () => {
@@ -52,18 +53,29 @@ const [itemCount,setitemCount]=useState(0);
   };
 
   return (
-    <div className="flex justify-center m2 p-4 items-center shadow-md w-full" data-testid="menu">
+    <div
+      className="flex justify-center m2 p-4 items-center shadow-md w-full"
+      data-testid="menu"
+    >
+      <div>
+        <p className="mr-6 font-bold">
+          {infoData?.itemAttribute?.vegClassifier === "VEG"
+            ? "VEG🟢"
+            : "NONVEG🔴"}
+        </p>
+      </div>
       <div>
         <img
           src={
             !infoData?.imageId ? NO_IMG_URL : SWIGGY_IMG_URL + infoData?.imageId
           }
-          className="w-56 "
+          className="w-56 P-4"
         />
+        <h1 className="text-sm font-bold w-32 mt-2">{infoData?.name}</h1>
       </div>
+
       <div className="flex flex-col w-10 ml-4">
-        <h1 className="text-sm font-bold"> {infoData?.name}</h1>
-        <h1 className="mt-2">₹{infoData?.price / 100}</h1>
+        <h1 className="mt-2 font-bold text-lg">₹{infoData?.price / 100}</h1>
       </div>
 
       <div className="ml-10">
@@ -73,19 +85,21 @@ const [itemCount,setitemCount]=useState(0);
         >
           Add
         </button> */}
-     
-        <button data-testid="addMenuItemBtn"
-          className="bg-green-700 h-10 p-2 px-3 mx-10 text-white rounded-md hover:bg-green-400"
+
+        <button
+          data-testid="addMenuItemBtn"
+          className="bg-green-600 h-10 p-2 px-3 mx-10 text-white rounded-md hover:bg-green-400 text-sm"
           onClick={() => addItemToCart(infoData)}
         >
-          +
+          ADD
         </button>
-           <span>{itemCount}</span>
-        <button data-testid="removeMenuItemBtn"
-          className="bg-red-700 h-10 p-2 px-3 mx-10 text-white rounded-md hover:bg-red-400"
+        <span>{itemCount}</span>
+        <button
+          data-testid="removeMenuItemBtn"
+          className="bg-red-600 h-10 p-2 px-3 mx-8 text-white rounded-md hover:bg-red-400 text-sm"
           onClick={() => handleDecrease(id)}
         >
-          -
+          REMOVE
         </button>
       </div>
     </div>
