@@ -1,7 +1,7 @@
 # foodeliveryApp
 Hosted 1.0 version at: https://foodelivery-02pst99.netlify.app/ 
 
-Hosted 1.1 version at: https://foodelivery-pst99-03.netlify.app/
+Hosted 1.1 version at: https://foodelivery-pst-03.netlify.app/
 
 Version 1.2 Coming soon.....................
 
